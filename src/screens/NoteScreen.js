@@ -1,14 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { TextEditorComponent } from '../components/TextEditorComponent.js';
-import '../styles/TextEditor.css';
-import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import RichEditor from 'react-native-pell-rich-editor'
+import '../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg';
 
 function NoteScreen() {
     return (
-        <div className="notescreen">
-            <TextEditorComponent />
-        </div>
+        <RichEditor />
     )
 }
 
